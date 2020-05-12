@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Alina Anisimova](https://up.htmlacademy.ru/htmlcss/28/user/1447027).
-* Наставник: {Екатерина Комнатная] (https://up.htmlacademy.ru/htmlcss/28/user/215761).
+* Наставник: [Екатерина Комнатная] (https://up.htmlacademy.ru/htmlcss/28/user/215761).
 
 ---
 

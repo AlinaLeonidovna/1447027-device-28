@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Интернет-магазин гаджетов «Device»</title>
 </head>
+<body>
 	<header class="main-header">
 		<div class="container">
 			<a class="main-header-logo">
@@ -65,7 +66,83 @@
 		<h1 class="visually-hidden">Интернет-магазин гаджетов «Device»</h1>
 		<section class="promo">
 			<h2 class="visually-hidden">Презентация товара</h2>
-			<!-- Здесь будет слайдер -->
+			<div class="promo-slider">
+				<!-- Для анимации слайдов с помощью CSS -->
+				<div class="promo-slider-controls">
+					<ul>
+						<li>
+							<input type="radio" name="control" id="promo-btn-1" checked>
+							<label for="promo-btn-1" aria-label="Переключатель первого слайда"></label>
+						</li>
+						<li>
+							<input type="radio" name="control" id="promo-btn-2">
+							<label for="promo-btn-2" aria-label="Переключатель второго слайда"></label>
+						</li>
+						<li>
+							<input type="radio" name="control" id="promo-btn-3">
+							<label for="promo-btn-3" aria-label="Переключатель третьего слайда"></label>
+						</li>
+					</ul>
+				</div>
+				<!-- Для анимации слайдов с помощью JS
+				<div class="promo-slider-controls">
+					<ul>
+						<li>
+							<button class="btn activ" type="button" aria-label="Переключатель первого слайда"></button>
+						</li>
+						<li class="slider-controls-item">
+							<button class="btn" type="button" aria-label="Переключатель второго слайда"></button>
+						</li>
+						<li class="slider-controls-item">
+							<button class="btn" type="button" aria-label="Переключатель третьего слайда"></button>
+						</li>
+					</ul>
+				</div> -->
+				<div class="promo-slides">
+					<div class="promo-slide">
+						<img class="promo-slide-image" src="https://via.placeholder.com/384x486" width="384" height="486" alt="Три одинаковые черные селфи-палка с ремешком на руку, демонстрирующие состояния подставки: отсутствие, сложенное и расправленное.">
+						<div class="promo-slide-text">
+							<p>Делай селфи, как Бен Стиллер!</p>
+							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
+							<a class="btn" href="blank.html">Подробнее</a>
+							<dl>
+								<dt>Вес палки</dt>
+								<dd>8,5 м</dd>
+								<dt>Длина палки</dt>
+								<dd>5 кг</dd>
+								<dt>Материал</dt>
+								<dd>Карбон</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="promo-slide">
+						<img class="promo-slide-image" src="https://via.placeholder.com/345x485" width="345" height="485" alt="Черный фитнес-браслет с силеконовым ремешком, небольшым экраном и боковой кнопкой управления.">
+						<div class="promo-slide-text">
+							<p>Худеем правильно!</p>
+							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<a class="btn" href="blank.html">Подробнее</a>
+							<dl>
+								<dt>Без подзарядки</dt>
+								<dd>48 часов</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="promo-slide">
+						<img class="promo-slide-image" src="https://via.placeholder.com/526x334" width="526" height="334" alt="Квадрокоптер с белым корпусом, четырьмя черными винтами и светящимся красным лазером.">
+						<div class="promo-slide-text">
+							<p>Порхает как бабочка, жалит как пчела!</p>
+							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<a class="btn" href="blank.html">Подробнее</a>
+							<dl>
+								<dt>Дальность полета</dt>
+								<dd>800 м</dd>
+								<dt>Радиус поражения</dt>
+								<dd>50 м</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="popular">
 			<h2 class="visually-hidden">Популярные категории товаров</h2>
@@ -92,7 +169,53 @@
 		</section>
 		<section class="services">
 			<h2 class="visually-hidden">Сервисы</h2>
-			<!-- Здесь будет слайдер -->
+			<div class="services-slider">
+			<!-- Для анимации слайдов с помощью CSS -->
+			<div class="services-slider-controls">
+				<ul>
+					<li>
+						<input type="radio" name="control" id="services-btn-1" checked>
+						<label class="btn" for="services-btn-1">Доставка</label>
+					</li>
+					<li>
+						<input type="radio" name="control" id="services-btn-2">
+						<label class="btn" for="services-btn-2">Гарантия</label>
+					</li>
+					<li>
+						<input type="radio" name="control" id="services-btn-3">
+						<label class="btn" for="services-btn-3">Кредит</label>
+					</li>
+				</ul>
+			</div>
+			<!-- Для анимации слайдов с помощью JS
+			<div class="services-slider-controls">
+				<ul>
+					<li>
+						<button class="btn activ" type="button">Доставка</button>
+					</li>
+					<li>
+						<button class="btn" type="button">Гарантия</button>
+					</li>
+					<li>
+						<button class="btn" type="button">Кредит</button>
+					</li>
+				</ul>
+			</div> -->
+				<div class="services-slides">
+					<div class="services-slide">
+						<h3>Доставка</h3>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</div>
+					<div class="services-slide">
+						<h3>Гарантия</h3>
+						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+					</div>
+					<div class="services-slide">
+						<h3>Кредит</h3>
+						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="brands">
 			<h2 class="visually-hidden">Бренды</h2>
@@ -190,3 +313,4 @@
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 </body>
+</html>

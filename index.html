@@ -10,17 +10,23 @@
 			<a class="main-header-logo">
 				<img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device».">
 			</a>
-			<div class="main-user">
-				<!-- Здесь будет форма -->
-				<ul class="main-user-navigation">
-					<li class="main-user-navigation-item">
-						<a class="main-user-navigation-login" href="blank.html">Войти</a>
+			<div class="main-user-navigation">
+				<form class="search" action="https://echo.htmlacademy.ru" method="get">
+					<p>
+						<label for="search"></label>
+						<input type="search" name="search" id="search" placeholder="Поиск по сайту" autofocus>
+					</p>
+					<button type="submit">Найти</button>
+				</form>
+				<ul class="main-user">
+					<li class="main-user-item">
+						<a class="main-user-login" href="blank.html">Войти</a>
 					</li>
-					<li class="main-user-navigation-item">
-						<a class="main-user-navigation-compare" href="blank.html">Сравнить</a>
+					<li class="main-user-item">
+						<a class="main-user-compare" href="blank.html">Сравнить</a>
 					</li>
-					<li class="main-user-navigation-item">
-						<a class="main-user-navigation-basket" href="blank.html">Корзина</a>
+					<li class="main-user-item">
+						<a class="main-user-basket" href="blank.html">Корзина</a>
 					</li>
 				</ul>
 			</div>
@@ -84,10 +90,10 @@
 					<div class="promo-slide">
 						<img class="promo-slide-image" src="img/slider-1.png" width="384" height="486" alt="Три одинаковые черные селфи-палка с ремешком на руку, демонстрирующие состояния подставки: отсутствие, сложенное и расправленное.">
 						<div class="promo-slide-text">
-							<p>Делай селфи, как Бен Стиллер!</p>
-							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
+							<p class="promo-slide-title">Делай селфи, как Бен Стиллер!</p>
+							<p class="promo-slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
 							<a class="btn" href="blank.html">Подробнее</a>
-							<dl>
+							<dl class="promo-slide-specifications">
 								<dt>Вес палки</dt>
 								<dd>8,5 м</dd>
 								<dt>Длина палки</dt>
@@ -100,10 +106,10 @@
 					<div class="promo-slide">
 						<img class="promo-slide-image" src="img/slider-2.png" width="345" height="485" alt="Черный фитнес-браслет с силеконовым ремешком, небольшым экраном и боковой кнопкой управления.">
 						<div class="promo-slide-text">
-							<p>Худеем правильно!</p>
-							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<p class="promo-slide-title">Худеем правильно!</p>
+							<p class="promo-slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 							<a class="btn" href="blank.html">Подробнее</a>
-							<dl>
+							<dl class="promo-slide-specifications">
 								<dt>Без подзарядки</dt>
 								<dd>48 часов</dd>
 							</dl>
@@ -112,10 +118,10 @@
 					<div class="promo-slide">
 						<img class="promo-slide-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с белым корпусом, четырьмя черными винтами и светящимся красным лазером.">
 						<div class="promo-slide-text">
-							<p>Порхает как бабочка, жалит как пчела!</p>
-							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<p class="promo-slide-title">Порхает как бабочка, жалит как пчела!</p>
+							<p class="promo-slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 							<a class="btn" href="blank.html">Подробнее</a>
-							<dl>
+							<dl class="promo-slide-specifications">
 								<dt>Дальность полета</dt>
 								<dd>800 м</dd>
 								<dt>Радиус поражения</dt>
@@ -268,12 +274,26 @@
 
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<!-- Здесь будет карта -->
+		<img src="img/map-big-1.png" width="994" height="593" alt="Карта с адресом нашего офиса: город Москва, улица Строителей, дом 15.">
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 	<section class="modal modal-feedback">
 		<h2 class="visually-hidden">Обратная связь</h2>
-		<!-- Здесь будет форма -->
+		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="feedback-item">
+				<label for="feedback-login">Ваше имя:</label>
+				<input type="text" name="login" id="feedback-login" placeholder="Имя Фамилия" autocomplete="on">
+			</p>
+			<p class="feedback-item">
+				<label for="feedback-email">Ваш e-mail:</label>
+				<input type="email" name="email" id="feedback-email" placeholder="email@example.com" required autocomplete="on">
+			</p>
+			<p class="feedback-item">
+				<label for="feedback-comment">Текст письма:</label>
+				<textarea name="comment" id="feedback-comment" rows="4" placeholder="В свободной форме" required></textarea>
+			</p>
+			<button class="btn" type="submit">Отправить</button>
+		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 </body>

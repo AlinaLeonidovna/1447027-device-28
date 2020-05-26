@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Интернет-магазин гаджетов «Device»</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -14,7 +17,7 @@
 				<form class="search" action="https://echo.htmlacademy.ru" method="get">
 					<p>
 						<label class="visually-hidden" for="search">Поле поиска</label>
-						<input type="search" name="search" id="search" placeholder="Поиск по сайту" autofocus>
+						<input type="search" name="search" id="search" placeholder="Поиск по сайту" >
 					</p>
 					<button type="submit">Найти</button>
 				</form>
@@ -33,7 +36,7 @@
 			<nav class="main-navigation">
 				<ul class="main-menu">
 					<li class="main-menu-item">
-						<a class="main-menu-link" href="blank.html">Каталог товаров</a>
+						<a href="blank.html">Каталог товаров</a>
 						<ul class="sub-menu">
 							<li class="sub-menu-item">
 								<a class="sub-menu-link" href="blank.html">Виртуальная реальность</a>
@@ -76,13 +79,13 @@
 				<div class="promo-slider-controls">
 					<ul>
 						<li>
-							<button class="btn activ" type="button" aria-label="Переключатель первого слайда"></button>
+							<button class="activ" type="button" aria-label="Переключатель первого слайда"></button>
 						</li>
 						<li class="slider-controls-item">
-							<button class="btn" type="button" aria-label="Переключатель второго слайда"></button>
+							<button type="button" aria-label="Переключатель второго слайда"></button>
 						</li>
 						<li class="slider-controls-item">
-							<button class="btn" type="button" aria-label="Переключатель третьего слайда"></button>
+							<button type="button" aria-label="Переключатель третьего слайда"></button>
 						</li>
 					</ul>
 				</div>
@@ -161,13 +164,13 @@
 				<div class="services-slider-controls">
 					<ul>
 						<li>
-							<button class="btn activ" type="button">Доставка</button>
+							<button class="btn btn-services activ" type="button">Доставка</button>
 						</li>
 						<li>
-							<button class="btn" type="button">Гарантия</button>
+							<button class="btn btn-services" type="button">Гарантия</button>
 						</li>
 						<li>
-							<button class="btn" type="button">Кредит</button>
+							<button class="btn btn-services" type="button">Кредит</button>
 						</li>
 					</ul>
 				</div>
@@ -190,34 +193,42 @@
 		<section class="brands">
 			<h2 class="visually-hidden">Бренды</h2>
 			<ul class="brands-list">
-				<li class="brands-item">
-					<a href="https://www.dji.com/ru" target="_blank"><img src="img/logo-1.png" width="260" height="100" alt="Логотип компании DJI по производству дронов/квадрокоптеров."></a>
+				<li>
+					<a href="https://www.dji.com/ru" target="_blank">
+						<img src="img/logo-1.png" width="260" height="100" alt="Логотип компании DJI по производству дронов/квадрокоптеров.">
+					</a>
 				</li>
-				<li class="brands-item">
-					<a href="http://www.sp-gadgets.com/" target="_blank"><img src="img/logo-2.png" width="260" height="100" alt="Логотип компании SP Gadgets по производству аксесуаров для смартфонов и экшн-камер."></a>
+				<li>
+					<a href="http://www.sp-gadgets.com/" target="_blank">
+						<img src="img/logo-2.png" width="260" height="100" alt="Логотип компании SP Gadgets по производству аксесуаров для смартфонов и экшн-камер.">
+					</a>
 				</li>
-				<li class="brands-item">
-					<a href="https://gopro.ru/" target="_blank"><img src="img/logo-3.png" width="260" height="100" alt="Логотип компании GoPro по производству квадрокптеров, экшн-камер и аксесуаров для них."></a>
+				<li>
+					<a href="https://gopro.ru/" target="_blank">
+						<img src="img/logo-3.png" width="260" height="100" alt="Логотип компании GoPro по производству квадрокптеров, экшн-камер и аксесуаров для них.">
+					</a>
 				</li>
-				<li class="brands-item">
-					<a href="https://www.vive.com/ru/" target="_blank"><img src="img/logo-4.png" width="260" height="100" alt="Логотип компании VIVE по производству систем виртуальной реальности и аксесуаров для них."></a>
+				<li>
+					<a href="https://www.vive.com/ru/" target="_blank">
+						<img src="img/logo-4.png" width="260" height="100" alt="Логотип компании VIVE по производству систем виртуальной реальности и аксесуаров для них.">
+					</a>
 				</li>
 			</ul>
 		</section>
 		<section class="about">
-			<h2 class="about-title">О нас</h2>
-			<p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-			<p class="about-text">Мы можем доставить ваш товар в самы отдаленные точки России! работает со многими транспортными компаниями:</p>
-			<ul class="about-traffic-list">
-				<li class="about-traffic-item">Деловые Линии</li>
-				<li class="about-traffic-item">Автотрейдинг</li>
-				<li class="about-traffic-item">ЖелДорЭкспедиция</li>
+			<h2>О нас</h2>
+			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+			<p>Мы можем доставить ваш товар в самы отдаленные точки России! работает со многими транспортными компаниями:</p>
+			<ul class="about-traffic">
+				<li>Деловые Линии</li>
+				<li>Автотрейдинг</li>
+				<li>ЖелДорЭкспедиция</li>
 			</ul>
 			<a class="btn" href="blank.html">Подробнее о нас</a>
 		</section>
 		<section class="contacts">
-			<h2 class="contacts-title">Контакты</h2>
-			<p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+			<h2>Контакты</h2>
+			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<a href="blank.html"><img src="img/map-1.png" width="560" height="222" alt="Карта с адресом нашего офиса: город Москва, улица Строителей, дом 15."></a>
 			<a class="btn" href="blank.html">Напишите нам</a>
 		</section>
@@ -243,21 +254,21 @@
 			<div class="footer-conditions">
 				<p class="footer-adress">г. Москва, ул.Строителей, 15</p>
 				<ul class="footer-site-menu">
-					<li class="footer-site-menu-item">
-						<a class="footer-site-menu-link" href="blank.html">Доставка</a>
+					<li>
+						<a href="blank.html">Доставка</a>
 					</li>
-					<li class="footer-site-menu-item">
-						<a class="footer-site-menu-link" href="blank.html">Гарантия</a>
+					<li>
+						<a href="blank.html">Гарантия</a>
 					</li>
-					<li class="footer-site-menu-item">
-						<a class="footer-site-menu-link" href="blank.html">Контакты</a>
+					<li>
+						<a href="blank.html">Контакты</a>
 					</li>
 				</ul>
 				<a class="footer-contacts" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
 			</div>
 			<div class="footer-social">
 				<ul class="social-btn">
-					<li class="social-btn-item">
+					<li>
 						<a class="social-btn-link social-btn-facebook" href="blank.html" target="_blank">Facebook</a>
 					</li>
 					<li>

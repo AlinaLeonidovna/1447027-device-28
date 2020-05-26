@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Интернет-магазин гаджетов «Device»</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
+<body class="inner-page">
 	<header class="main-header">
 		<div class="container">
 			<a class="main-header-logo" href="index.html">
@@ -82,10 +86,10 @@
 			<li class="breadcrumbs-item breadcrumbs-item-current">Моноподы для селфи</li>
 		</ul>
 		<section class="filters">
-			<h2 class="filters-title">Фильтр:</h2>
+			<h2>Фильтр:</h2>
 			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 				<fieldset>
-					<legend>Стоимость</legend>
+					<legend class="filter-title">Стоимость</legend>
 					<div class="wrapper">
 						<div class="range">
 							<div class="track"></div>
@@ -101,32 +105,32 @@
 					</div>
 				</fieldset>
 				<fieldset>
-					<legend>Цвет</legend>
+					<legend class="filter-title">Цвет</legend>
 					<ul class="filter-color">
-						<li class="filter-color-item">
+						<li>
 							<input type="checkbox" name="black" id="color-black" checked>
 							<label for="color-black">Чёрный</label>
 						</li>
-						<li class="filter-color-item">
+						<li>
 							<input type="checkbox" name="white" id="color-white">
 							<label for="color-white">Белый</label> 
 						</li>
-						<li class="filter-color-item">
+						<li>
 							<input type="checkbox" name="blue" id="color-blue" checked>
 							<label for="color-blue">Синий</label>
 						</li>
-						<li class="filter-color-item">
+						<li>
 							<input type="checkbox" name="red" id="color-red" checked>
 							<label for="color-red">Красный</label>
 						</li>
-						<li class="filter-color-item">
+						<li>
 							<input type="checkbox" name="pink" id="color-pink">
 							<label for="color-pink">Розовый</label>
 						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>Bluetooth</legend>
+					<legend class="filter-title">Bluetooth</legend>
 					<ul class="connection">
 						<li class="connection-item">
 							<input type="radio" name="connection" id="connection-yes" value="yes" checked>
@@ -142,15 +146,15 @@
 			</form>
 		</section>
 		<section class="sort">
-			<h2 class="sort-title">Сортировка:</h2>
+			<h2>Сортировка:</h2>
 			<ul class="sort-list">
 				<li class="sort-item-current">По цене</li>
 				<li class="sort-item"><a href="blank.html">По типу</a></li>
 				<li class="sort-item"><a href="blank.html">По популярности</a></li>
 			</ul>
-			<ul>
+			<ul class="sort-price">
 				<li class="sort-min"><a href="blank.html" aria-label="От меньшего к большему"></a></li>
-				<li class="sort-max"><a href="blank.html" aria-label="От большего к меньшему"></a></li>
+				<li class="sort-max-current"><a href="blank.html" aria-label="От большего к меньшему"></a></li>
 			</ul>
 		</section>
 		<section class="product">
@@ -159,7 +163,7 @@
 			<li class="product-item">
 				<article class="product-card">
 					<img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка с тонкой облегченной ручкой.">
-					<h3 class="product-card-title"><a href="blank.html">Любительская селфи-палка</a></h3>
+					<h3><a href="blank.html">Любительская селфи-палка</a></h3>
 					<span>500 руб.</span>
 					<a class="btn" href="blank.html">В корзину</a>
 					<a class="product-card-link" href="blank.html">Добавить к сравнению</a>
@@ -168,7 +172,7 @@
 			<li class="product-item">
 				<article class="product-card">
 					<img src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с усиленным крепление и кнопкой спуска.">
-					<h3 class="product-card-title"><a href="blank.html">Профессиональная селфи-палка</a></h3>
+					<h3><a href="blank.html">Профессиональная селфи-палка</a></h3>
 					<span>1500 руб.</span>
 					<a class="btn" href="blank.html">В корзину</a>
 					<a class="product-card-link" href="blank.html">Добавить к сравнению</a>
@@ -177,7 +181,7 @@
 			<li class="product-item">
 				<article class="product-card">
 					<img src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка желтого цвета с ремешком для крепления на руке.">
-					<h3 class="product-card-title"><a href="blank.html">Непотопляемая селфи-палка</a></h3>
+					<h3><a href="blank.html">Непотопляемая селфи-палка</a></h3>
 					<span>2500 руб.</span>
 					<a class="btn" href="blank.html">В корзину</a>
 					<a class="product-card-link" href="blank.html">Добавить к сравнению</a>
@@ -186,7 +190,7 @@
 			<li class="product-item">
 				<article class="product-card">
 					<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки человека.">
-					<h3 class="product-card-title"><a href="blank.html">Селфи-палка «Следуй за мной»</a></h3>
+					<h3><a href="blank.html">Селфи-палка «Следуй за мной»</a></h3>
 					<span>4900 руб.</span>
 					<a class="btn" href="blank.html">В корзину</a>
 					<a class="product-card-link" href="blank.html">Добавить к сравнению</a>
@@ -194,11 +198,11 @@
 			</li>
 			</ul>
 			<ul class="pagination-list">
-				<li class="pagination-item disabled" title="Страницы под номером 0 не существут!"><a>Назад</a></li>
-				<li class="pagination-item pagination-item-current"><a>1</a></li>
-				<li class="pagination-item"><a href="blank.html">2</a></li>
-				<li class="pagination-item"><a href="blank.html">3</a></li>
-				<li class="pagination-item"><a href="blank.html">Вперёд</a></li>
+				<li><a class="pagination-item disabled" title="Страницы под номером 0 не существут!">Назад</a></li>
+				<li><a class="pagination-item-current">1</a></li>
+				<li><a href="blank.html">2</a></li>
+				<li><a href="blank.html">3</a></li>
+				<li><a class="pagination-item" href="blank.html">Вперёд</a></li>
 			</ul>
 		</section>
 	</main>
@@ -255,3 +259,4 @@
 		</div>
 	</footer>
 </body>
+</html>

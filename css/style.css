@@ -31,7 +31,7 @@
 	font-style: normal;
 	font-weight: 800;
 	src: 
-		local("Gilroy"), local("Gilroy-Extrabold"),
+		local("Gilroy-Extrabold"),
 		url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
 		url("../fonts/Gilroy-Extrabold.woff") format("woff");
 }
@@ -41,7 +41,7 @@
 	font-style: normal;
 	font-weight: 300;
 	src: 
-		local("Gilroy"), local("Gilroy-Light"),
+		local("Gilroy-Light"),
 		url("../fonts/Gilroy-Light.woff2") format("woff2"),
 		url("../fonts/Gilroy-Light.woff") format("woff");
 }
@@ -86,7 +86,6 @@ a {
 /* button */
 
 .btn {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -159,19 +158,20 @@ a.btn {
 }
 
 .main-navigation {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	font-family: "Gilroy", "Arial", sans-serif;
-	letter-spacing: 0.2em;
 	text-transform: uppercase;
+}
+
+.main-menu-link {
+	letter-spacing: 0.2em;
 }
 
 .sub-menu {
 	display: none;
 
-	font-style: normal;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
@@ -217,7 +217,6 @@ a.btn {
 }
 
 .promo-slide-title {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
@@ -229,7 +228,6 @@ a.btn {
 }
 
 .promo-slide-specifications dt {
-	font-style: normal;
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 15px;
@@ -238,7 +236,6 @@ a.btn {
 }
 
 .promo-slide-specifications dd {
-	font-style: normal;
 	font-weight: 300;
 	font-size: 36px;
 	line-height: 42px;
@@ -249,14 +246,18 @@ a.btn {
 /* popular */
 
 .popular-list {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
-	line-height:225px;
+	line-height:22px;
 	font-family: "Gilroy", "Arial", sans-serif;
 	letter-spacing: 0.05em;
 
 	list-style: none;
+}
+
+.popular-list h3{
+	font-weight: 800;
+	font-size: 18px;
 }
 
 .popular-list a {
@@ -281,7 +282,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .services-slide h3 {
-	font-style: normal;
 	font-weight: 800;
 	font-size:47px;
 	line-height:58px;
@@ -302,7 +302,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 /* about */
 
 .about h2 {
-	font-style: normal;
 	font-weight: 800;
 	font-size:47px;
 	line-height:58px;
@@ -311,7 +310,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .about-traffic {
-	font-style: normal;
 	font-weight: 800;
 	font-size:16px;
 	line-height:28px;
@@ -323,7 +321,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 /* contacts */
 
 .contacts h2 {
-	font-style: normal;
 	font-weight: 800;
 	font-size:47px;
 	line-height:58px;
@@ -365,7 +362,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .footer-site-menu {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -434,7 +430,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .feedback-form {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -443,7 +438,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 
 .feedback-form input,
 .feedback-form input {
-	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 16px;
@@ -492,7 +486,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .page-title {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 47px;
 	line-height: 58px;
@@ -525,7 +518,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 /* filters */
 
 .filters h2 {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
@@ -535,7 +527,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .filter-title {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 17px;
@@ -553,7 +544,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 /* sort */
 
 .sort h2 {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
 	line-height: 20px;
@@ -563,6 +553,7 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .sort-list {
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 19px;
 	color: var(--basic-black-opasity-three);
@@ -598,7 +589,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .product-card h3 {
-	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -611,7 +601,6 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 }
 
 .product-card span {
-	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 18px;
@@ -619,13 +608,7 @@ background-image: linear-gradient(#ffffff 40px, #e5e5e5 40px);
 	letter-spacing: 0.05em;
 }
 
-a.btn {
-	display: none;
-}
-
 a.product-card-link {
-	display: none;
-
 	font-size: 13px;
 	line-height: 18px;
 	letter-spacing: 0.1em;

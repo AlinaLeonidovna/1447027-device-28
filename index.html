@@ -10,65 +10,67 @@
 <body class="page-body">
 	<header class="main-header">
 		<div class="container">
-			<a class="main-header-logo">
-				<img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device».">
-			</a>
-			<div class="main-user-navigation">
-				<form class="search" action="https://echo.htmlacademy.ru" method="get">
-					<p>
-						<label class="visually-hidden" for="search">Поле поиска</label>
-						<input type="search" name="search" id="search" placeholder="Поиск по сайту" >
-					</p>
-					<button type="submit">Найти</button>
-				</form>
-				<ul class="main-user">
-					<li class="main-user-item">
-						<a class="main-user-login" href="blank.html">Войти</a>
-					</li>
-					<li class="main-user-item">
-						<a class="main-user-compare" href="blank.html">Сравнить</a>
-					</li>
-					<li class="main-user-item">
-						<a class="main-user-basket" href="blank.html">Корзина</a>
-					</li>
-				</ul>
+			<div class="wrapper">
+				<a class="main-header-logo">
+					<img src="img/logo-device.svg" width="163" height="35" alt="Логотип интернет-магазина гаджетов «Device».">
+				</a>
+				<div class="main-user-navigation">
+					<form class="search" action="https://echo.htmlacademy.ru" method="get">
+						<p>
+							<label class="visually-hidden" for="search">Поле поиска</label>
+							<input type="search" name="search" id="search" placeholder="Поиск по сайту" >
+						</p>
+						<button type="submit">Найти</button>
+					</form>
+					<ul class="main-user">
+						<li class="main-user-item">
+							<a class="main-user-login" href="#">Войти</a>
+						</li>
+						<li class="main-user-item">
+							<a class="main-user-compare" href="#">Сравнить</a>
+						</li>
+						<li class="main-user-item">
+							<a class="main-user-cart" href="#">Корзина</a>
+						</li>
+					</ul>
+				</div>
+				<nav class="main-navigation">
+					<ul class="main-menu">
+						<li class="main-menu-item">
+							<a class="main-menu-link" href="#">Каталог товаров</a>
+							<ul class="sub-menu">
+								<li class="sub-menu-item">
+									<a class="sub-menu-link" href="#">Виртуальная реальность</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link" href="catalog.html">Моноподы для селфи</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link" href="#">Экшн-камеры</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link" href="#">Фитнес браслеты</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link" href="#">Умные часы</a>
+								</li>
+								<li class="sub-menu-item">
+									<a class="sub-menu-link" href="#">Квадрокоптеры</a>
+								</li>
+							</ul>
+						</li>
+						<li class="main-menu-item">
+							<a class="main-menu-link" href="#">Доставка</a>
+						</li>
+						<li class="main-menu-item">
+							<a class="main-menu-link" href="#">Гарантия</a>
+						</li>
+						<li class="main-menu-item">
+							<a class="main-menu-link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="main-navigation">
-				<ul class="main-menu">
-					<li class="main-menu-item">
-						<a class="main-menu-link" href="blank.html">Каталог товаров</a>
-						<ul class="sub-menu">
-							<li class="sub-menu-item">
-								<a class="sub-menu-link" href="blank.html">Виртуальная реальность</a>
-							</li>
-							<li class="sub-menu-item">
-								<a class="sub-menu-link" href="catalog.html">Моноподы для селфи</a>
-							</li>
-							<li class="sub-menu-item">
-								<a class="sub-menu-link" href="blank.html">Экшн-камеры</a>
-							</li>
-							<li class="sub-menu-item">
-								<a class="sub-menu-link" href="blank.html">Фитнес браслеты</a>
-							</li>
-							<li class="sub-menu-item">
-								<a class="sub-menu-link" href="blank.html">Умные часы</a>
-							</li>
-							<li class="sub-menu-item">
-								<a class="sub-menu-link" href="blank.html">Квадрокоптеры</a>
-							</li>
-						</ul>
-					</li>
-					<li class="main-menu-item">
-						<a class="main-menu-link" href="blank.html">Доставка</a>
-					</li>
-					<li class="main-menu-item">
-						<a class="main-menu-link" href="blank.html">Гарантия</a>
-					</li>
-					<li class="main-menu-item">
-						<a class="main-menu-link" href="blank.html">Контакты</a>
-					</li>
-				</ul>
-			</nav>
 		</div>
 	</header>
 	<main>
@@ -77,30 +79,34 @@
 			<div class="container">
 				<h2 class="visually-hidden">Презентация товара</h2>
 				<div class="promo-slider">
-					<div class="promo-slider-controls">
-						<ul>
-							<li>
-								<button class="activ" type="button" aria-label="Переключатель первого слайда"></button>
-							</li>
-							<li class="slider-controls-item">
-								<button type="button" aria-label="Переключатель второго слайда"></button>
-							</li>
-							<li class="slider-controls-item">
-								<button type="button" aria-label="Переключатель третьего слайда"></button>
-							</li>
-						</ul>
-					</div>
 					<div class="promo-slides">
 						<div class="promo-slide promo-slide-monopods">
-							<img class="promo-slide-image image-monopods" src="img/slider-1.png" width="384" height="486" alt="Три одинаковые черные селфи-палка с ремешком на руку, демонстрирующие состояния подставки: отсутствие, сложенное и расправленное.">
+							<div class="promo-slide-image">
+								<img class="image-monopods" src="img/slider-1.png" width="384" height="486" alt="Три одинаковые черные селфи-палка с ремешком на руку, демонстрирующие состояния подставки: отсутствие, сложенное и расправленное.">
+							</div>
 							<div class="promo-slide-text">
-								<p class="promo-slide-title">Делай селфи, как Бен Стиллер!</p>
-								<p class="promo-slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом 5 килограмм.</p>
-								<a class="btn" href="blank.html">Подробнее</a>
+								<p class="promo-slide-title">Делай селфи,<br> как Бен Стиллер!</p>
+								<p class="promo-slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+								<div class="promo-controls-wraper">
+									<a class="btn" href="blank.html">Подробнее</a>
+<!-- 									<div class="promo-controls"> -->
+										<ul class="promo-controls-list">
+											<li class="promo-controls-item">
+												<button class="activ" type="button" aria-label="Первый слайд"></button>
+											</li>
+											<li class="promo-controls-item">
+												<button type="button" aria-label="Второй слайд"></button>
+											</li>
+											<li class="promo-controls-item">
+												<button type="button" aria-label="Третий слайд"></button>
+											</li>
+										</ul>
+<!-- 									</div> -->
+								</div>
 								<dl class="promo-slide-specifications">
-									<dt>Вес палки</dt>
-									<dd>8,5 м</dd>
 									<dt>Длина палки</dt>
+									<dd>8,5 м</dd>
+									<dt>Вес палки</dt>
 									<dd>5 кг</dd>
 									<dt>Материал</dt>
 									<dd>Карбон</dd>
@@ -108,7 +114,7 @@
 							</div>
 						</div>
 						<div class="promo-slide promo-slide-bracelet">
-							<img class="promo-slide-image image-bracelet" src="img/slider-2.png" width="345" height="485" alt="Черный фитнес-браслет с силеконовым ремешком, небольшым экраном и боковой кнопкой управления.">
+							<img class="image-bracelet" src="img/slider-2.png" width="345" height="485" alt="Черный фитнес-браслет с силеконовым ремешком, небольшым экраном и боковой кнопкой управления.">
 							<div class="promo-slide-text">
 								<p class="promo-slide-title">Худеем правильно!</p>
 								<p class="promo-slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -120,7 +126,7 @@
 							</div>
 						</div>
 						<div class="promo-slide promo-slide-quadcopter">
-							<img class="promo-slide-image image-quadcopter" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с белым корпусом, четырьмя черными винтами и светящимся красным лазером.">
+							<img class="image-quadcopter" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с белым корпусом, четырьмя черными винтами и светящимся красным лазером.">
 							<div class="promo-slide-text">
 								<p class="promo-slide-title">Порхает как бабочка, жалит как пчела!</p>
 								<p class="promo-slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>

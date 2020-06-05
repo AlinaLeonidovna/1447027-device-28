@@ -207,6 +207,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .search p {
@@ -306,7 +307,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/user.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center center;
 }
 
 .main-user-compare {
@@ -325,7 +326,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/compare.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center center;
 }
 
 .main-user-cart {
@@ -344,7 +345,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/cart.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: center center;
 }
 
 .main-navigation {
@@ -497,6 +498,19 @@ input[type="radio"].visually-hidden {
 	width: 100px;
 	height: 7px;
 	background-color: var(--basic-white);
+}
+
+.promo-slide-text::after{
+	content: "";
+	position: absolute;
+	top: 23px;
+	right: -9px;
+	width: 182px;
+	height: 170px;
+
+	background-image: url("../img/01.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .promo-slide-title {

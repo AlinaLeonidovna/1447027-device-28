@@ -575,6 +575,47 @@ input[type="radio"].visually-hidden {
 	background-position: center center;
 }
 
+.promo-slides {
+	counter-reset: item;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.promo-slides li {
+	margin: 0;
+	padding: 0;
+}
+
+.promo-slides li::before {
+	position: absolute;
+	counter-increment: item;
+	content: counter(item);
+	right: 53px;
+
+	font-weight: 800;
+	font-size: 179px;
+	line-height: 219px;
+	font-family: "Gilroy", "Arial", sans-serif;
+	color: var(--basic-white);
+	text-transform: uppercase;
+}
+
+.promo-slides li:nth-child(1)::before {
+	content: "01";
+	right: 47px;
+}
+
+.promo-slides li:nth-child(2)::before {
+	content: "02";
+	right: 54px;
+}
+
+.promo-slides li:nth-child(3)::before {
+	content: "03";
+}
+
 .promo-slide {
 	display: none;
 }
@@ -583,22 +624,21 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
-.promo-slide-monopods {
-	padding-bottom: 25px;
-}
-
-.promo-slide-bracelet {
-	margin-left: 9px;
-}
-
-.promo-slide-quadcopter {
-	padding-bottom: 30px;
-	margin-left: 12px;
-}
-
 .slide-wrapper {
 	display: flex;
 	justify-content: space-between;
+}
+
+.promo-slide-monopods .slide-wrapper {
+	padding-bottom: 25px;
+}
+
+.promo-slide-bracelet .slide-wrapper {
+	padding-bottom: 2px;
+}
+
+.promo-slide-quadcopter .slide-wrapper {
+	padding-bottom: 30px;
 }
 
 .promo-slide-image {
@@ -627,11 +667,13 @@ input[type="radio"].visually-hidden {
 .image-bracelet {
 	width: 345px;
 	height: 483px;
+	margin-left: 18px;
 }
 
 .image-quadcopter {
 	width: 526px;
 	height: 334px;
+	margin-left: 28px;
 }
 
 .promo-slide-text {
@@ -649,7 +691,7 @@ input[type="radio"].visually-hidden {
 	background-color: var(--basic-white);
 }
 
-.promo-slide-monopods .promo-slide-text::after{
+/*.promo-slide-monopods .promo-slide-text::after{
 	content: "";
 	position: absolute;
 	top: 23px;
@@ -690,7 +732,7 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/03.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
-}
+}*/
 
 .promo-slide-title {
 	margin: 0;
@@ -759,7 +801,6 @@ input[type="radio"].visually-hidden {
 	font-family: "Gilroy", "Arial", sans-serif;
 	letter-spacing: 0.1em;
 }
-
 
 /* popular */
 

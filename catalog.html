@@ -20,7 +20,7 @@
 							<label class="visually-hidden" for="search">Поле поиска</label>
 							<input type="search" name="search" id="search" placeholder="Поиск по сайту" >
 						</p>
-						<button type="submit">Найти</button>
+						<button class="search" type="submit">Найти</button>
 					</form>
 					<ul class="main-user">
 						<li class="main-user-item">
@@ -127,10 +127,10 @@
 							<div class="range-filter">
 								<div class="range-controls">
 									<div class="scale">
-										<div class="bar" style="width: 30%; margin-left: 20%"></div>
+										<div class="bar" style="width: 56%; margin-left: 0%"></div>
 									</div>
-									<div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-									<div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+									<div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
+									<div class="toggle toggle-max" tabindex="0" style="left: 56%"></div>
 								</div>
 								<div class="price-controls">
 									<label class="min-price">
@@ -147,22 +147,27 @@
 							<ul class="filter-color">
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="color-black" checked>
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="color-black">Чёрный</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="color-white">
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="color-white">Белый</label> 
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue" id="color-blue" checked>
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="color-blue">Синий</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="red" id="color-red" checked>
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="color-red">Красный</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="color-pink">
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="color-pink">Розовый</label>
 								</li>
 							</ul>
@@ -172,15 +177,17 @@
 							<ul class="connection">
 								<li>
 									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-yes" value="yes" checked>
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="connection-yes">Есть</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-no" value="no">
+									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
 									<label for="connection-no">Нет</label>
 								</li>
 							</ul>
 						</fieldset>
-						<button class="btn" type="submit">Показать</button>
+						<button class="btn btn-filter" type="submit">Показать</button>
 					</form>
 				</section>
 				<section class="product">
@@ -191,7 +198,7 @@
 								<div class="product-hover-wrapper">
 									<img class="product-img" src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка с тонкой облегченной ручкой.">
 									<div class="hover-links">
-										<a class="btn" href="#">В корзину</a>
+										<a class="btn btn-product-card" href="#">В корзину</a>
 										<a class="product-card-link" href="#">Добавить к сравнению</a>
 									</div>
 								</div>
@@ -204,39 +211,39 @@
 						<li class="product-item">
 							<article class="product-card">
 								<img class="product-img" src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с усиленным крепление и кнопкой спуска.">
+								<div class="hover-links">
+									<a class="btn btn-product-card" href="#">В корзину</a>
+									<a class="product-card-link" href="#">Добавить к сравнению</a>
+								</div>
 								<div class="product-info-wrapper">
 									<h3><a href="#">Профессиональная<br> селфи-палка</a></h3>
 									<span>1 500 руб.</span>
-								</div>
-								<div class="hover-links">
-									<a class="btn" href="#">В корзину</a>
-									<a class="product-card-link" href="#">Добавить к сравнению</a>
 								</div>
 							</article>
 						</li>
 						<li class="product-item">
 							<article class="product-card">
 								<img class="product-img" src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка желтого цвета с ремешком для крепления на руке.">
-								<div class="product-info-wrapper">
-									<h3><a href="#">Непотопляемая<br> селфи-палка</a></h3>
-									<span>2 500 руб.</span>
-								</div>
 								<div class="hover-links">
-									<a class="btn" href="#">В корзину</a>
+									<a class="btn btn-product-card" href="#">В корзину</a>
 									<a class="product-card-link" href="#">Добавить к сравнению</a>
+								</div>
+								<div class="product-info-wrapper">
+									<h3><a href="#">Непотопляемая селфи-палка</a></h3>
+									<span>2 500 руб.</span>
 								</div>
 							</article>
 						</li>
 						<li class="product-item">
-							<article class="product-card">
+							<article class="product-card product-new">
 								<img class="product-img" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки человека.">
+								<div class="hover-links">
+									<a class="btn btn-product-card" href="#">В корзину</a>
+									<a class="product-card-link" href="#">Добавить к сравнению</a>
+								</div>
 								<div class="product-info-wrapper">
 									<h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
 									<span>4 900 руб.</span>
-								</div>
-								<div class="hover-links">
-									<a class="btn" href="#">В корзину</a>
-									<a class="product-card-link" href="#">Добавить к сравнению</a>
 								</div>
 							</article>
 						</li>

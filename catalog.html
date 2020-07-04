@@ -5,7 +5,7 @@
 	<title>Интернет-магазин гаджетов «Device»</title>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/min.style.css" rel="stylesheet">
 </head>
 <body class="page-body inner-page">
 	<header class="main-header">
@@ -16,11 +16,9 @@
 				</a>
 				<div class="main-user-navigation">
 					<form class="search" action="https://echo.htmlacademy.ru" method="get">
-						<p>
-							<label class="visually-hidden" for="search">Поле поиска</label>
-							<input type="search" name="search" id="search" placeholder="Поиск по сайту" >
-						</p>
-						<button class="search" type="submit">Найти</button>
+						<label class="visually-hidden" for="search">Поле поиска</label>
+						<input type="search" name="search" id="search" placeholder="Поиск по сайту" >
+						<button type="submit">Найти</button>
 					</form>
 					<ul class="main-user">
 						<li class="main-user-item">
@@ -147,27 +145,27 @@
 							<ul class="filter-color">
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="color-black" checked>
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<!-- При необходимости заблокировать чекбокс добавить тегу input атрибут disabled -->
 									<label for="color-black">Чёрный</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="color-white">
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<!-- При необходимости заблокировать чекбокс добавить тегу input атрибут disabled -->
 									<label for="color-white">Белый</label> 
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="blue" id="color-blue" checked>
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<!-- При необходимости заблокировать чекбокс добавить тегу input атрибут disabled -->
 									<label for="color-blue">Синий</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="red" id="color-red" checked>
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<!-- При необходимости заблокировать чекбокс добавить тегу input атрибут disabled -->
 									<label for="color-red">Красный</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="color-pink">
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<!-- При необходимости заблокировать чекбокс добавить тегу input атрибут disabled -->
 									<label for="color-pink">Розовый</label>
 								</li>
 							</ul>
@@ -176,13 +174,13 @@
 							<legend>Bluetooth</legend>
 							<ul class="connection">
 								<li>
-									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-yes" value="yes" checked>
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-yes" value="yes"checked>
+									<!-- При необходимости заблокировать радиобаттон добавить тегу input атрибут disabled -->
 									<label for="connection-yes">Есть</label>
 								</li>
 								<li>
 									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-no" value="no">
-									<!-- При необходимости заблокировать чекбокс добавить атрибут disabled -->
+									<!-- При необходимости заблокировать радиобаттон добавить тегу input атрибут disabled -->
 									<label for="connection-no">Нет</label>
 								</li>
 							</ul>
@@ -210,10 +208,12 @@
 						</li>
 						<li class="product-item">
 							<article class="product-card">
-								<img class="product-img" src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с усиленным крепление и кнопкой спуска.">
-								<div class="hover-links">
-									<a class="btn btn-product-card" href="#">В корзину</a>
-									<a class="product-card-link" href="#">Добавить к сравнению</a>
+								<div class="product-hover-wrapper">
+									<img class="product-img" src="img/item-2.jpg" width="360" height="380" alt="Селфи-палка с усиленным крепление и кнопкой спуска.">
+									<div class="hover-links">
+										<a class="btn btn-product-card" href="#">В корзину</a>
+										<a class="product-card-link" href="#">Добавить к сравнению</a>
+									</div>
 								</div>
 								<div class="product-info-wrapper">
 									<h3><a href="#">Профессиональная<br> селфи-палка</a></h3>
@@ -223,10 +223,12 @@
 						</li>
 						<li class="product-item">
 							<article class="product-card">
-								<img class="product-img" src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка желтого цвета с ремешком для крепления на руке.">
-								<div class="hover-links">
-									<a class="btn btn-product-card" href="#">В корзину</a>
-									<a class="product-card-link" href="#">Добавить к сравнению</a>
+								<div class="product-hover-wrapper">
+									<img class="product-img" src="img/item-3.jpg" width="360" height="380" alt="Селфи-палка желтого цвета с ремешком для крепления на руке.">
+									<div class="hover-links">
+										<a class="btn btn-product-card" href="#">В корзину</a>
+										<a class="product-card-link" href="#">Добавить к сравнению</a>
+									</div>
 								</div>
 								<div class="product-info-wrapper">
 									<h3><a href="#">Непотопляемая селфи-палка</a></h3>
@@ -236,10 +238,12 @@
 						</li>
 						<li class="product-item">
 							<article class="product-card product-new">
-								<img class="product-img" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки человека.">
-								<div class="hover-links">
-									<a class="btn btn-product-card" href="#">В корзину</a>
-									<a class="product-card-link" href="#">Добавить к сравнению</a>
+								<div class="product-hover-wrapper">
+									<img class="product-img" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка в виде руки человека.">
+									<div class="hover-links">
+										<a class="btn btn-product-card" href="#">В корзину</a>
+										<a class="product-card-link" href="#">Добавить к сравнению</a>
+									</div>
 								</div>
 								<div class="product-info-wrapper">
 									<h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>

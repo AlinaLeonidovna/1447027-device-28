@@ -127,15 +127,15 @@
 									<div class="scale">
 										<div class="bar" style="width: 56%; margin-left: 0%"></div>
 									</div>
-									<div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
-									<div class="toggle toggle-max" tabindex="0" style="left: 56%"></div>
+									<button class="toggle toggle-min" type="button" style="left: 0%" aria-label="Цена товара от"></button>
+									<button class="toggle toggle-max" type="button" style="left: 56%" aria-label="Цена товара до"></button>
 								</div>
 								<div class="price-controls">
 									<label class="min-price">
-										от <input type="number" name="min-price" min="0" step="100" value="0">
+										от <input type="number" name="min-price" min="0" max="9900" step="100" value="0">
 									</label>
 									<label class="max-price">
-										до <input type="number" name="max-price" min="100"step="100" value="5000">
+										до <input type="number" name="max-price" min="100" max="10000" step="100" value="5000">
 									</label>
 								</div>
 							</div>
@@ -174,7 +174,7 @@
 							<legend>Bluetooth</legend>
 							<ul class="connection">
 								<li>
-									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-yes" value="yes"checked>
+									<input class="visually-hidden filter-input-radio" type="radio" name="connection" id="connection-yes" value="yes" checked>
 									<!-- При необходимости заблокировать радиобаттон добавить тегу input атрибут disabled -->
 									<label for="connection-yes">Есть</label>
 								</li>
@@ -275,8 +275,8 @@
 				</a>
 				<ul class="footer-user-navigation">
 					<li class="footer-user-navigation-item">
-							<a class="footer-user-navigation-account" href="#">Валентин Петухов</a>
-						</li>
+						<a class="footer-user-navigation-account" href="#">Валентин Петухов</a>
+					</li>
 					<li class="footer-user-navigation-item">
 						<a class="footer-user-navigation-login" href="#">Выйти</a>
 					</li>

@@ -702,6 +702,7 @@ input[type="radio"].visually-hidden {
 
 .promo-slide {
 	display: none;
+	min-height: 536px;
 }
 
 .promo-slide-current {
@@ -713,7 +714,7 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 }
 
-.promo-slide-monopods .slide-wrapper {
+/*.promo-slide-monopods .slide-wrapper {
 	padding-bottom: 25px;
 }
 
@@ -723,7 +724,7 @@ input[type="radio"].visually-hidden {
 
 .promo-slide-quadcopter .slide-wrapper {
 	padding-bottom: 30px;
-}
+}*/
 
 .promo-slide-image {
 	width: 560px;

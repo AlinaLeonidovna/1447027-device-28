@@ -2437,9 +2437,8 @@ input[type="number"]:focus {
 }
 
 .filter-input-checkbox:focus + label::before {
-	outline: thin dotted;
-	outline: 5px auto -webkit-focus-ring-color;
-	outline-offset: -2px;
+	outline: 2px solid var(--basic-black);
+	outline-offset: -5px;
 }
 
 .filter-input-checkbox + label:active::before,
@@ -2513,6 +2512,11 @@ input[type="checkbox"]:disabled + label:active::after {
 .filter-input-radio + label:focus::before,
 .filter-input-radio:checked + label:focus::after {
 	opacity: 0.6;
+}
+
+.filter-input-radio:focus + label::before {
+	outline: 2px solid var(--basic-black);
+	outline-offset: -2px;
 }
 
 .filter-input-radio + label:active::before,

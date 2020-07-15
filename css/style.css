@@ -2463,11 +2463,11 @@ legend.cost {
 	opacity: 1;
 }
 
-input[type="checkbox"]:disabled + label,
-input[type="checkbox"]:disabled + label::before,
-input[type="checkbox"]:disabled + label::after,
-input[type="checkbox"]:disabled + label:hover::after,
-input[type="checkbox"]:disabled + label:active::after {
+.filter-color input[type="checkbox"]:disabled + label,
+.filter-color input[type="checkbox"]:disabled + label::before,
+.filter-color input[type="checkbox"]:disabled + label::after,
+.filter-color input[type="checkbox"]:disabled + label:hover::after,
+.filter-color input[type="checkbox"]:disabled + label:active::after {
 	opacity: 0.5;
 	cursor: default;
 }
@@ -2804,17 +2804,17 @@ a.pagination-item-forward:active {
 	width: 480px;
 }
 
-.inner-page .footer-user-navigation li:nth-child(1) {
+.inner-page .footer-user-navigation-item:nth-child(1) {
 	margin-right: 8px;
 
 }
 
-.inner-page .footer-user-navigation li:nth-child(2) {
+.inner-page .footer-user-navigation-item:nth-child(2) {
 	margin: 0;
 	padding: 0;
 }
 
-.inner-page .footer-user-navigation li:nth-child(3) {
+.inner-page .footer-user-navigation-item:nth-child(3) {
 	margin-left: auto;
 	margin-right: 41px;
 }
